@@ -6,7 +6,30 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 7px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        max-height: 1.5vh;
+        width: 10vw;
+
+        &:hover {
+
+            .main-nav__img {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__img {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: -13%;
+        width: 1vw;
+        height: 2vh;
     }
 
     &__link {
@@ -20,4 +43,5 @@
             font-weight: 600;
         }
     }
+ 
 }

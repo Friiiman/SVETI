@@ -39,7 +39,7 @@
   src: url("../styles/fonts/BodegaScript.woff2") format("woff2");
 }
 * {
-  font-family: serif, "Montserrat";
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -106,7 +106,24 @@ img {
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
+}
+.main-nav__item {
+  position: relative;
+  display: flex;
+  max-height: 1.5vh;
+  width: 10vw;
+}
+.main-nav__item:hover .main-nav__img {
+  display: inline-block;
+}
+.main-nav__img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -13%;
+  width: 1vw;
+  height: 2vh;
 }
 .main-nav__link {
   color: #fff;
