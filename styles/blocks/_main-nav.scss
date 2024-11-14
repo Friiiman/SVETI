@@ -6,13 +6,13 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 7px;
+        gap: 13px;
     }
 
     &__item {
         position: relative;
         display: flex;
-        max-height: 1.5vh;
+        height: 1vh;
         width: 10vw;
 
         &:hover {
