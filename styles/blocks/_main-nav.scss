@@ -6,28 +6,21 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 13px;
+        gap: 7px;
     }
 
     &__item {
         position: relative;
         display: flex;
-        height: 1vh;
-        width: 10vw;
-
-        &:hover {
-
-            .main-nav__img {
-                display: inline-block;
-            }
-        }
+        // height: 1vh;
+        // width: 10vw;
     }
 
     &__img {
         display: none;
         position: absolute;
-        top: .1vh;
-        left: -13%;
+        top: 0;
+        left: -1.7%;
         width: 1vw;
         height: 2vh;
     }
@@ -36,7 +29,11 @@
         color: #fff;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: underline  
+        }
+
+        &:hover ~ .main-nav__img {
+            display: inline-block;
         }
 
         &--bold {

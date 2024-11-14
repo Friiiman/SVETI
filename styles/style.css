@@ -106,22 +106,17 @@ img {
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 7px;
 }
 .main-nav__item {
   position: relative;
   display: flex;
-  height: 1vh;
-  width: 10vw;
-}
-.main-nav__item:hover .main-nav__img {
-  display: inline-block;
 }
 .main-nav__img {
   display: none;
   position: absolute;
-  top: 0.1vh;
-  left: -13%;
+  top: 0;
+  left: -1.7%;
   width: 1vw;
   height: 2vh;
 }
@@ -130,6 +125,9 @@ img {
 }
 .main-nav__link:hover {
   text-decoration: underline;
+}
+.main-nav__link:hover ~ .main-nav__img {
+  display: inline-block;
 }
 .main-nav__link--bold {
   font-weight: 600;
