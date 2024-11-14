@@ -1,0 +1,137 @@
+/* montserrat-200 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-200.woff2") format("woff2");
+}
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-regular.woff2") format("woff2");
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../styles/fonts/montserrat-v29-cyrillic_latin-600.woff2") format("woff2");
+}
+/* bodoni-moda-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "aston-calvin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/aston-calvin.otf") format("otf");
+}
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.center-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  background-image: url(./img/promo/promo-img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 10%;
+}
+.page-header__logo {
+  display: none;
+}
+.page-header__list {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.page-header__link {
+  color: #fff;
+}
+
+.main-nav {
+  padding-top: 20%;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main-nav__link {
+  color: #fff;
+}
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+.main-nav__link--bold {
+  font-weight: 600;
+}
+
+.promo {
+  position: relative;
+  padding: 0 10%;
+  height: 100%;
+}
+.promo__logo {
+  position: absolute;
+  top: -20vh;
+  left: 42vw;
+  width: 15vw;
+  height: 100vh;
+  transform: rotate(22.5deg);
+}
+.promo__title {
+  position: absolute;
+  display: inline-block;
+  top: 43vh;
+  left: 35.5vw;
+  width: 15vw;
+  height: 100vh;
+  font-size: 10vw;
+  font-family: "aston-calvin";
+  text-transform: uppercase;
+  letter-spacing: -4px;
+}/*# sourceMappingURL=style.css.map */

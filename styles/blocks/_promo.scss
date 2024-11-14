@@ -1,0 +1,29 @@
+.promo {
+    position: relative;
+    // max-width: 1240px;
+    // margin: 0 auto;
+    padding: 0 10%;
+    height: 100%;
+
+    &__logo {
+        position: absolute;
+        top: -20vh;
+        left: 42vw;
+        width: 15vw;
+        height: 100vh;
+        transform: rotate(22.5deg);
+    }
+
+    &__title {
+        position: absolute;
+        display: inline-block;
+        top: 43vh;
+        left: 35.5vw;
+        width: 15vw;
+        height: 100vh;
+        font-size: 10vw;
+        font-family: 'aston-calvin';
+        text-transform: uppercase;
+        letter-spacing: -4px;
+    }
+}

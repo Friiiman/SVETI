@@ -1,0 +1,24 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 10%;
+
+    &__logo {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: end;
+        gap: 40px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        color: #fff;
+    }
+}

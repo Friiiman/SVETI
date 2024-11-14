@@ -1,0 +1,23 @@
+.main-nav {
+    padding-top: 20%;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__link {
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &--bold {
+            font-weight: 600;
+        }
+    }
+}
