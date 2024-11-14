@@ -120,7 +120,7 @@ img {
 .main-nav__img {
   display: none;
   position: absolute;
-  top: 0;
+  top: 0.1vh;
   left: -13%;
   width: 1vw;
   height: 2vh;
