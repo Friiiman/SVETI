@@ -22,13 +22,21 @@
   font-weight: 600;
   src: url("../styles/fonts/montserrat-v29-cyrillic_latin-600.woff2") format("woff2");
 }
-/* bodoni-moda-regular - latin */
+/* aston-calvin-regular - latin */
 @font-face {
   font-display: swap;
   font-family: "aston-calvin";
   font-style: normal;
   font-weight: 400;
   src: url("../styles/fonts/aston-calvin.otf") format("otf");
+}
+/* aston-calvin-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "bodega-script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../styles/fonts/BodegaScript.woff2") format("woff2");
 }
 * {
   font-family: "Montserrat";
@@ -74,7 +82,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 10%;
+  padding: 30px 7%;
 }
 .page-header__logo {
   display: none;
@@ -112,12 +120,12 @@ img {
 
 .promo {
   position: relative;
-  padding: 0 10%;
+  padding: 0 7%;
   height: 100%;
 }
 .promo__logo {
   position: absolute;
-  top: -20vh;
+  top: -25vh;
   left: 42vw;
   width: 15vw;
   height: 100vh;
@@ -126,7 +134,7 @@ img {
 .promo__title {
   position: absolute;
   display: inline-block;
-  top: 43vh;
+  top: 37vh;
   left: 35.5vw;
   width: 15vw;
   height: 100vh;
@@ -134,4 +142,14 @@ img {
   font-family: "aston-calvin";
   text-transform: uppercase;
   letter-spacing: -4px;
+}
+.promo__text {
+  position: absolute;
+  display: inline-block;
+  top: 52vh;
+  left: 28vw;
+  width: 47vw;
+  height: 100vh;
+  font-size: 5vw;
+  font-family: "bodega-script";
 }/*# sourceMappingURL=style.css.map */
