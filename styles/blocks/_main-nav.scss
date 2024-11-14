@@ -19,10 +19,14 @@
     &__img {
         display: none;
         position: absolute;
-        top: 0;
+        top: 2%;
         left: -1.7%;
         width: 1vw;
         height: 2vh;
+
+        @media (min-width: 1800px) {
+            top: 10%;
+        }
     }
 
     &__link {

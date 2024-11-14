@@ -115,10 +115,15 @@ img {
 .main-nav__img {
   display: none;
   position: absolute;
-  top: 0;
+  top: 2%;
   left: -1.7%;
   width: 1vw;
   height: 2vh;
+}
+@media (min-width: 1800px) {
+  .main-nav__img {
+    top: 10%;
+  }
 }
 .main-nav__link {
   color: #fff;
