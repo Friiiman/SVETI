@@ -28,7 +28,7 @@
   font-family: "aston-calvin";
   font-style: normal;
   font-weight: 400;
-  src: url("../styles/fonts/aston-calvin.otf") format("otf");
+  src: url("../styles/fonts/gimetta-marriage.otf") format("opentype");
 }
 /* aston-calvin-regular - latin */
 @font-face {
@@ -69,23 +69,22 @@ img {
 
 .header-wrapper {
   height: 100vh;
-  width: 100vw;
   color: #fff;
   background-image: url(./img/promo/promo-img1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 3%;
 }
 
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 30px 7%;
 }
 .page-header__logo {
-  display: none;
+  color: #fff;
 }
 .page-header__list {
   display: flex;
@@ -155,21 +154,87 @@ img {
   position: absolute;
   display: inline-block;
   top: 42vh;
-  left: 35.5vw;
+  left: 37vw;
   width: 15vw;
   height: 100vh;
   font-size: 10vw;
   font-family: "aston-calvin";
   text-transform: uppercase;
-  letter-spacing: -4px;
+  letter-spacing: 7px;
 }
 .promo__text {
   position: absolute;
   display: inline-block;
   top: 57vh;
-  left: 28vw;
+  left: 27vw;
   width: 47vw;
   height: 100vh;
   font-size: 5vw;
   font-family: "bodega-script";
+}
+
+.page-main {
+  margin: 0 auto;
+  padding: 2vw 3%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1vw;
+  overflow: hidden;
+}
+
+.product-card {
+  margin-bottom: 30px;
+  color: #000;
+}
+.product-card__img {
+  margin-bottom: 10px;
+}
+.product-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product-card__title {
+  font-weight: 600;
+  font-size: 1vw;
+}
+.product-card__price {
+  font-size: 1vw;
+}
+
+.page-footer {
+  position: relative;
+  margin: 0 auto;
+  padding: 1vw 3% 3vw;
+}
+.page-footer__logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.page-footer__logo-item {
+  text-transform: uppercase;
+  font-family: "aston-calvin";
+  font-size: 5vw;
+  letter-spacing: 7px;
+}
+.page-footer__text {
+  text-transform: uppercase;
+}
+.page-footer__nav {
+  position: absolute;
+  top: 15%;
+  right: 3vw;
+}
+.page-footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.page-footer__nav-link {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+.page-footer {
+    position: relative;
+    margin: 0 auto;
+    padding: 1vw 3% 3vw;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__logo-item {
+        text-transform: uppercase;
+        font-family: 'aston-calvin';
+        font-size: 5vw;
+        letter-spacing: 7px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+    }
+
+    &__nav {
+        position: absolute;
+        top: 15%;
+        right: 3vw;
+        
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+    }
+
+    &__nav-link {
+        color: #000;
+    }
+}

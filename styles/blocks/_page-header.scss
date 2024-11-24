@@ -2,12 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // max-width: 1240px;
-    margin: 0 auto;
-    padding: 30px 7%;
 
     &__logo {
-        display: none;
+        color: #fff;
     }
 
     &__list {
