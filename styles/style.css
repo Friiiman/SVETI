@@ -160,6 +160,9 @@ img {
   position: relative;
   padding: 0 7%;
   height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .promo__logo {
   position: absolute;
