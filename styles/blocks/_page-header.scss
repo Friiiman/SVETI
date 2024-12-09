@@ -2,9 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3vw 3vw 0;
 
-    &__logo {
-        color: #fff;
+    &--main {
+        padding: 0;
+
+        &>.page-header__logo {
+            display: none;
+        }
+    }
+
+    &__logo-img {
+        height: 7vh;
     }
 
     &__list {
@@ -16,6 +25,10 @@
     }
 
     &__link {
-        color: #fff;
+        color: #000;
+
+        &--main {
+            color: #fff;
+        }
     }
 }

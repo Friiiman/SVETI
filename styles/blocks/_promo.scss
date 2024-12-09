@@ -1,13 +1,11 @@
 .promo {
     position: relative;
-    // max-width: 1240px;
-    // margin: 0 auto;
     padding: 0 7%;
     height: 100%;
 
     &__logo {
         position: absolute;
-        top: -20vh;
+        top: -21vh;
         left: 40vw;
         width: 15vw;
         height: 100vh;
@@ -17,7 +15,7 @@
     &__title {
         position: absolute;
         display: inline-block;
-        top: 42vh;
+        top: 43vh;
         left: 35vw;
         width: 15vw;
         height: 100vh;
@@ -30,7 +28,7 @@
     &__text {
         position: absolute;
         display: inline-block;
-        top: 57vh;
+        top: 58vh;
         left: 25vw;
         width: 47vw;
         height: 100vh;

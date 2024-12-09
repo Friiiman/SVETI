@@ -1,0 +1,27 @@
+.breadcrumbs {
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+        &:first-child > .breadcrumbs__link {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &:not(:last-child) {
+            margin-right: .5vw;
+        }
+
+        &:not(:last-child)::after {
+            content: '/';
+        }
+    }
+
+    &__link {
+        color: #000;
+        text-decoration: none;
+    }
+}

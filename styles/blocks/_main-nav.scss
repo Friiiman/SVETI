@@ -1,7 +1,17 @@
 .main-nav {
-    padding-top: 20%;
+    align-self: flex-start;
+    position: sticky;
+    width: 100%;
+    padding-top: 3vw;
+    padding-left: 1.5vw;
+    top: 0;
     font-weight: 200;
-    text-transform: uppercase;
+
+    &--promo {
+        position: relative;
+        padding-top: 17vw;
+        padding-left: 0;
+    }
 
     &__list {
         display: flex;
@@ -12,32 +22,38 @@
     &__item {
         position: relative;
         display: flex;
-        // height: 1vh;
-        // width: 10vw;
+
+        &:first-child {
+            text-transform: uppercase;
+        }
     }
 
     &__img {
         display: none;
         position: absolute;
         top: 2%;
-        left: -1.7%;
+        left: -1.5vw;
         width: 1vw;
         height: 2vh;
 
-        @media (min-width: 1800px) {
-            top: 10%;
-        }
+        // @media (min-width: 1800px) {
+        //     top: 10%;
+        // }
     }
 
     &__link {
-        color: #fff;
+        color: #000;
+
+        &--promo {
+            color: #fff;
+        }
 
         &:hover {
             text-decoration: underline  
         }
 
         &:hover ~ .main-nav__img {
-            display: inline-block;
+            display: block;
         }
 
         &--bold {
