@@ -140,6 +140,11 @@ img {
   width: 1vw;
   height: 2vh;
 }
+@media (min-width: 1800px) {
+  .main-nav__img {
+    top: 10%;
+  }
+}
 .main-nav__link {
   color: #000;
 }
