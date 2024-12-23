@@ -1,0 +1,27 @@
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+
+    &--hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    &__button {
+        width: 2vw;
+        height: 2vw;
+        margin: 0 5px;
+        cursor: pointer;
+        border: none;
+    }
+
+    &__button--active {
+        background-color: #000;
+        color: #fff;
+    }
+}

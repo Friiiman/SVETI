@@ -52,5 +52,35 @@
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
         "productPrice": "52.00"
+    },
+    {
+        "productId": "10",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00"
+    },
+    {
+        "productId": "11",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00"
+    },
+    {
+        "productId": "12",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00"
+    },
+    {
+        "productId": "13",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00"
+    },
+    {
+        "productId": "14",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00"
     }
 ]
