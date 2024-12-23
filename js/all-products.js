@@ -59,7 +59,7 @@ fetch("js/data.json")
                 if (index === currentPage) {
                     button.classList.add('pagination__button--active');
                 } else {
-                    button.classList.remove('pagination__buttona--ctive');
+                    button.classList.remove('pagination__button--active');
                 }
             });
         }
