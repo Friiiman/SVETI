@@ -3,8 +3,9 @@ fetch("js/data.json")
         return response.json();
     })
     .then((data) => {
+        data = data.reverse().slice(0, 8);
+        
         const cardsContainer = document.querySelector(".products__main");
-        data = data.slice(0, 8);
         data.forEach(({ productId, imgSrc, productName, productPrice }) => {
             const productCardEl = `
                 <a id="${productId}" href="#" class="product-card">
