@@ -3,84 +3,189 @@
         "productId": "1",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "beads"
     },
     {
         "productId": "2",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "bracelets"
     },
     {
         "productId": "3",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "chokers"
     },
     {
         "productId": "4",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "earrings"
     },
     {
         "productId": "5",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "komplects"
     },
     {
         "productId": "6",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "necklace"
     },
     {
         "productId": "7",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "pendants"
     },
     {
         "productId": "8",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "rings"
     },
     {
         "productId": "9",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "sautoir"
     },
     {
         "productId": "10",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "beads"
     },
     {
         "productId": "11",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "bracelets"
     },
     {
         "productId": "12",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "chokers"
     },
     {
         "productId": "13",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "earrings"
     },
     {
         "productId": "14",
         "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
         "productName": "Ellery x m'o capsule",
-        "productPrice": "52.00"
+        "productPrice": "52.00",
+        "type": "komplects"
+    },
+    {
+        "productId": "15",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "necklace"
+    },
+    {
+        "productId": "16",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "pendants"
+    },
+    {
+        "productId": "17",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "rings"
+    },
+    {
+        "productId": "18",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "sautoir"
+    },
+    {
+        "productId": "19",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "beads"
+    },
+    {
+        "productId": "20",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "bracelets"
+    },
+    {
+        "productId": "21",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "chokers"
+    },
+    {
+        "productId": "22",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "earrings"
+    },
+    {
+        "productId": "23",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "komplects"
+    },
+    {
+        "productId": "24",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "necklace"
+    },
+    {
+        "productId": "25",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "pendants"
+    },
+    {
+        "productId": "26",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "rings"
+    },
+    {
+        "productId": "27",
+        "imgSrc": "./styles/img/products-img/IMG_1405.jpg",
+        "productName": "Ellery x m'o capsule",
+        "productPrice": "52.00",
+        "type": "sautoir"
     }
 ]

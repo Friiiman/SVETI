@@ -49,6 +49,7 @@ fetch("js/data.json")
                     currentPage = i;
                     showPage(currentPage);
                     updateActiveButtonStates();
+                    window.scrollTo(0, 0);
                 });
 
                 paginationDiv.appendChild(pageButton);

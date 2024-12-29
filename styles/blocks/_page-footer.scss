@@ -7,13 +7,12 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        gap: 1vh;
     }
 
     &__logo-item {
-        text-transform: uppercase;
-        font-family: 'aston-calvin';
-        font-size: 5vw;
-        letter-spacing: 7px;
+        width: 13vw;
     }
 
     &__text {
@@ -22,7 +21,7 @@
 
     &__nav {
         position: absolute;
-        top: 15%;
+        top: 1vh;
         right: 3vw;
         
     }

@@ -177,17 +177,12 @@ img {
   height: 100vh;
   transform: rotate(22.5deg);
 }
-.promo__title {
+.promo__main-logo {
   position: absolute;
   display: inline-block;
-  top: 43vh;
-  left: 35vw;
-  width: 15vw;
-  height: 100vh;
-  font-size: 10vw;
-  font-family: "gimetta-marriage";
-  text-transform: uppercase;
-  letter-spacing: 7px;
+  top: 42vh;
+  left: 34.7vw;
+  width: 25vw;
 }
 .promo__text {
   position: absolute;
@@ -279,19 +274,18 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  gap: 1vh;
 }
 .page-footer__logo-item {
-  text-transform: uppercase;
-  font-family: "aston-calvin";
-  font-size: 5vw;
-  letter-spacing: 7px;
+  width: 13vw;
 }
 .page-footer__text {
   text-transform: uppercase;
 }
 .page-footer__nav {
   position: absolute;
-  top: 15%;
+  top: 1vh;
   right: 3vw;
 }
 .page-footer__nav-list {
