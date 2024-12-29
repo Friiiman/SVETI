@@ -1,7 +1,8 @@
 .page-footer {
     position: relative;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 3vw 3vw;
+    flex-shrink: 0;
 
     &__logo {
         display: flex;

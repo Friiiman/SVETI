@@ -47,6 +47,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-size: 1.2vw;
 }
 
@@ -221,8 +224,9 @@ img {
 }
 
 .page-main {
+  flex-grow: 1;
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 3vw 3vw;
 }
 
@@ -292,8 +296,9 @@ img {
 
 .page-footer {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 3vw 3vw;
+  flex-shrink: 0;
 }
 .page-footer__logo {
   display: flex;
