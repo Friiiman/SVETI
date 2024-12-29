@@ -134,7 +134,7 @@ img {
 .main-nav {
   align-self: flex-start;
   position: sticky;
-  width: 100%;
+  min-width: 11vw;
   padding-top: 3vw;
   padding-left: 1.5vw;
   top: 0;
@@ -323,8 +323,9 @@ img {
 }
 
 .pagination {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
 }
 .pagination--hidden {
   position: absolute;
@@ -339,9 +340,9 @@ img {
 .pagination__button {
   width: 2vw;
   height: 2vw;
-  margin: 0 5px;
   cursor: pointer;
   border: none;
+  font-size: 1.7vh;
 }
 .pagination__button--active {
   background-color: #000;

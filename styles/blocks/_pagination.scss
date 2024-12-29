@@ -1,6 +1,7 @@
 .pagination {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
 
     &--hidden {
         position: absolute;
@@ -15,9 +16,9 @@
     &__button {
         width: 2vw;
         height: 2vw;
-        margin: 0 5px;
         cursor: pointer;
         border: none;
+        font-size: 1.7vh;
     }
 
     &__button--active {
