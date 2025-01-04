@@ -118,7 +118,7 @@ img {
   display: none;
 }
 .page-header__logo-img {
-  height: 7vh;
+  width: 15vw;
 }
 .page-header__list {
   display: flex;
