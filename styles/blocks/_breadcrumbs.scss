@@ -6,6 +6,10 @@
 
     &__item {
 
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+        }
+
         &:first-child > .breadcrumbs__link {
             text-transform: uppercase;
             font-weight: bold;

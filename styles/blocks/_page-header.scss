@@ -4,6 +4,10 @@
     align-items: center;
     padding: 3vw 3vw 0;
 
+    @media (max-width: 1000px) {
+        justify-content:center
+    }
+
     &--main {
         padding: 0;
 
@@ -14,6 +18,10 @@
 
     &__logo-img {
         width: 15vw;
+
+        @media (max-width: 1000px) {
+            width: 30vw;
+        }
     }
 
     &__list {
@@ -22,6 +30,10 @@
         gap: 40px;
         width: 100%;
         text-transform: uppercase;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &__link {
@@ -30,5 +42,21 @@
         &--main {
             color: #fff;
         }
+    }
+
+    &__content{
+        position: absolute;
+        display: none;
+        right: 3vw;
+
+        @media (max-width: 1000px) {
+            display: flex;
+            gap: 3vw;
+            align-items: center;
+        }
+    }
+
+    &__phone-icon{
+        width: 5vw;
     }
 }

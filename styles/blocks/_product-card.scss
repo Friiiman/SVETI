@@ -15,9 +15,17 @@
     &__title {
         font-weight: 600;
         font-size: 1vw;
+
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+        }
     }
 
     &__price {
         font-size: 1vw;
+
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+        }
     }
 }

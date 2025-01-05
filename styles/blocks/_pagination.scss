@@ -18,7 +18,13 @@
         height: 2vw;
         cursor: pointer;
         border: none;
-        font-size: 1.7vh;
+        font-size: 1.5vw;
+
+        @media (max-width: 1000px) {
+            width: 4vw;
+            height: 4vw;
+            font-size: 3vw;
+        }
     }
 
     &__button--active {
