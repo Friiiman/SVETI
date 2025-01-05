@@ -319,6 +319,11 @@ img {
   padding-top: 4vw;
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  .products__main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .products__catalog {
   display: flex;
   flex-direction: column;
