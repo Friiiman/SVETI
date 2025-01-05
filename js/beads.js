@@ -1,3 +1,5 @@
+import { pagination } from './pagination.js';
+
 async function getData() {
     const response = await fetch("js/data.json");
     const data = await response.json();
@@ -40,40 +42,6 @@ function pagination() {
         });
         updateActiveButtonStates();
     }
-
-    function createPageButtons() {
-        const totalPages = Math.ceil(items.length / itemsPerPage);
-        const paginationDiv = document.querySelector('.pagination');
-
-        // Add page buttons
-        for (let i = 0; i < totalPages; i++) {
-            const pageButton = document.createElement('button');
-            pageButton.classList.add('pagination__button');
-            pageButton.textContent = i + 1;
-            pageButton.addEventListener('click', () => {
-                currentPage = i;
-                showPage(currentPage);
-                updateActiveButtonStates();
-                window.scrollTo(0, 0);
-            });
-
-            paginationDiv.appendChild(pageButton);
-        }
-    }
-
-    function updateActiveButtonStates() {
-        const pageButtons = document.querySelectorAll('.pagination button');
-        pageButtons.forEach((button, index) => {
-            if (index === currentPage) {
-                button.classList.add('pagination__button--active');
-            } else {
-                button.classList.remove('pagination__button--active');
-            }
-        });
-    }
-
-    createPageButtons();
-    showPage(currentPage);
 }
 
 addProductCard();
