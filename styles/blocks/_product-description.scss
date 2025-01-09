@@ -58,47 +58,113 @@
 
     &__right {
         grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
 
         @media (max-width: 1000px) {
             grid-area: auto;
+            font-size: 4vw;
+            gap: 5vw;
         }
     }
 
     &__title {
-        padding-bottom: 2vw;
+
+        @media (max-width: 1000px) {
+            font-size: 5vw;
+        }
     }
 
     &__text {
+        margin-bottom: 2vw;
         font-size: 1vw;
-        padding-bottom: 1vw;
+
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+        }
     }
 
     &__char {
-        display: inline-block;
-        margin-bottom: 2vw;
-    }
 
-    &__price {
-        display: inline-block;
-        margin-bottom: 1vw;
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+        }
     }
 
     &__button {
         margin-bottom: 1vw;
-        padding: 1vw 0 1vw 0;
+        padding: 1vw;
         width: 100%;
         background-color: #000;
         color: #fff;
         font-size: 1.5vw;
         cursor: pointer;
+
+        @media (max-width: 1000px) {
+            padding: 3vw;
+            font-size: 4vw;
+        }
     }
 
     &__details {
         font-size: 1vw;
+
+        & h3 {
+            margin-bottom: 1.5vw;
+        }
+
+        & p {
+            margin-bottom: .5vw;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: .5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        & ul li {
+            position: relative;
+            margin-left: 1vw;
+        }
+
+        & ul li::before {
+            content: '*';
+            position: absolute;
+            left: -1vw;
+            top: 0;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 3vw;
+
+            & p {
+                margin-bottom: 1.5vw;
+            }
+
+            & ul {
+                gap: 2vw;
+            }
+
+            & ul li {
+                margin-left: 1.5vw;
+            }
+    
+            & ul li::before {
+                left: -1.5vw;
+            }
+        }
     }
 
     &__summary {
-        margin-bottom: 1vw;
+        margin-bottom: 2vw;
         cursor: pointer;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 3vw;
+            font-size: 3vw;
+        }
     }
 }
