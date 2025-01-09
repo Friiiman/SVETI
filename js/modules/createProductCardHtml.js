@@ -4,7 +4,7 @@ export function createProductCardHtml(postsData, cardsContainer) {
             <article id="${productId}" class="product-card">
                 <img src="${imgSrc}" alt="Product photo" class="product-card__img">
                 <div class="product-card__text">
-                    <span class="product-card__title">${productName}</span>
+                    <h3 class="product-card__title">${productName}</h3>
                     <span class="product-card__price">${productPrice} ₽</span>
                 </div>
             </article>

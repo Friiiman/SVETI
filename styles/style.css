@@ -243,13 +243,14 @@ img {
 @media (max-width: 1000px) {
   .main-nav {
     position: fixed;
-    padding: 0;
+    padding: 0 0 5vw;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     font-size: 4vw;
     background-color: #fff;
+    overflow: scroll;
     z-index: 1;
   }
   .main-nav__link {
