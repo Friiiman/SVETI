@@ -1,5 +1,7 @@
 import { getData } from './getData.js';
 import { createProductCardPopup } from './createProductCardPopup.js';
+import { productPopupClose } from './productPopupClose.js';
+import { removePopupErrorImg } from './removePopupErrorImg.js';
 
 export async function addProductCardPopup() {
     const postsData = await getData();
@@ -9,26 +11,17 @@ export async function addProductCardPopup() {
     cardsContainer.addEventListener('click', function (event) {
         const productCard = event.target.closest('.product-card');
         let id = productCard.getAttribute('id');
+        const bodyEl = document.querySelector("body");
         let newData = postsData.filter(product => product.productId === id);
-        const body = document.querySelector("body");
 
         if (event.target.closest('.product-card')) {
-            body.classList.add("body--scroll-off");
+            bodyEl.classList.add("body--scroll-off");
 
             createProductCardPopup(newData, pageMainEl);
         }
 
-        function popupClose() {
-            const closeBtn = document.querySelector(".breadcrumbs__close");
-            closeBtn.addEventListener("click", (e) => {
-                const body = document.querySelector("body");
-                body.classList.remove("body--scroll-off");
+        productPopupClose();
 
-                const productDescriptionEl = document.querySelector(".product-description");
-                productDescriptionEl.remove();
-            });
-        }
-        popupClose();
-
+        removePopupErrorImg();
     });
 }

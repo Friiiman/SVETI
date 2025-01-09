@@ -18,9 +18,9 @@ export function createProductCardPopup(postsData, cardsContainer) {
                         <img src="./styles/img/cross-close.svg" alt="Закрыть" class="breadcrumbs__close">
                     </nav>
                     <div class="product-description__left">
-                        <img src="${imgSrc}" alt="Фото товара">
-                        <img src="${additionalImgSrcFirst}" alt="Фото товара">
-                        <img src="${additionalImgSrcSecond}" alt="Фото товара">
+                        <img src="${imgSrc}" alt="Фото товара" class="product-description__img">
+                        <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img">
+                        <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img">
                     </div>
                     <div class="product-description__right">
                         <h2 class="product-description__title">${productName}</h2>
