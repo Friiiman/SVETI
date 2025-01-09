@@ -24,7 +24,7 @@
     &__product-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(1vw, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
         gap: 3vw;
         padding-top: 4vw;
         overflow: hidden;
