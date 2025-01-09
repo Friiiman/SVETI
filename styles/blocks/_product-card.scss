@@ -1,15 +1,16 @@
 .product-card {
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
     color: #000;
+    cursor: pointer;
 
     &__img {
-        margin-bottom: 10px;
+        margin-bottom: 1vw;
     }
 
     &__text {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: .5vw;
     }
 
     &__title {

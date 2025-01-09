@@ -8,6 +8,7 @@
     font-weight: 200;
 
     &--hidden {
+        
         @media (max-width: 1000px) {
             display: none;
         }

@@ -2,7 +2,7 @@ export function pagination(){
     const content = document.querySelector('.products__product-cards');
     const itemsPerPage = 12; // set number of items per page
     let currentPage = 0;
-    const items = Array.from(content.getElementsByTagName('a')).slice(0);
+    const items = Array.from(content.getElementsByTagName('article')).slice(0);
 
     function showPage(page) {
         const startIndex = page * itemsPerPage;
