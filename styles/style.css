@@ -509,6 +509,42 @@ img {
   color: #000;
 }
 
+.contacts {
+  position: relative;
+  display: flex;
+  gap: 12vw;
+}
+.contacts__content {
+  display: flex;
+  gap: 10vw;
+  padding-top: 3vw;
+  overflow: hidden;
+}
+.contacts__content a {
+  color: #000;
+}
+.contacts__left {
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+  gap: 1.5vw;
+}
+.contacts__title {
+  margin-bottom: 1vw;
+}
+.contacts__vk {
+  margin-bottom: 2vw;
+}
+.contacts__work-time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.contacts__img {
+  margin-right: 10vw;
+  width: 27vw;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
