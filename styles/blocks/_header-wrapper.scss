@@ -8,6 +8,11 @@
     overflow: hidden;
     padding: 2vw 3vw;
     animation: bg-сhange 15s infinite;
+
+    @media (max-width: 1000px) {
+        padding: 0;
+        height: auto;
+    }
 }
 
 @keyframes bg-сhange {

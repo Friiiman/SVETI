@@ -80,6 +80,12 @@ img {
   padding: 2vw 3vw;
   animation: bg-сhange 15s infinite;
 }
+@media (max-width: 1000px) {
+  .header-wrapper {
+    padding: 0;
+    height: auto;
+  }
+}
 
 @keyframes bg-сhange {
   from {
@@ -121,6 +127,15 @@ img {
 .page-header--main > .page-header__logo {
   display: none;
 }
+@media (max-width: 1000px) {
+  .page-header--main {
+    height: 22vw;
+    background-color: #fff;
+  }
+  .page-header--main > .page-header__logo {
+    display: block;
+  }
+}
 .page-header__logo-img {
   width: 15vw;
 }
@@ -155,12 +170,13 @@ img {
 @media (max-width: 1000px) {
   .page-header__content {
     display: flex;
-    gap: 3vw;
+    gap: 4vw;
     align-items: center;
+    margin-top: 2vw;
   }
 }
 .page-header__phone-icon {
-  width: 5vw;
+  width: 7vw;
 }
 
 .main-nav {
@@ -179,13 +195,18 @@ img {
 }
 .main-nav--promo {
   position: relative;
-  padding-top: 13vw;
+  padding-top: 30vh;
   padding-left: 0;
 }
 @media (max-width: 1000px) {
   .main-nav--promo {
     position: fixed;
     padding: 0;
+  }
+}
+@media (min-width: 1281px) {
+  .main-nav--promo {
+    padding-top: 13vw;
   }
 }
 .main-nav__list {
@@ -269,30 +290,53 @@ img {
      -moz-user-select: none;
           user-select: none;
 }
+@media (max-width: 1000px) {
+  .promo {
+    margin-top: 22vw;
+    height: 30vw;
+  }
+}
 .promo__logo {
   position: absolute;
   top: -21vh;
-  left: 40vw;
+  left: 39vw;
   width: 15vw;
   height: 100vh;
   transform: rotate(22.5deg);
+}
+@media (max-width: 1000px) {
+  .promo__logo {
+    top: -50vh;
+    left: 42vw;
+  }
 }
 .promo__main-logo {
   position: absolute;
   display: inline-block;
   top: 42vh;
-  left: 34.7vw;
+  left: 33.7vw;
   width: 25vw;
+}
+@media (max-width: 1000px) {
+  .promo__main-logo {
+    display: none;
+  }
 }
 .promo__text {
   position: absolute;
   display: inline-block;
   top: 58vh;
-  left: 25vw;
+  left: 24vw;
   width: 47vw;
   height: 100vh;
   font-size: 5vw;
   font-family: "bodega-script";
+}
+@media (max-width: 1000px) {
+  .promo__text {
+    top: 10vw;
+    left: 25vw;
+  }
 }
 
 .page-main {
@@ -499,8 +543,8 @@ img {
   position: relative;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  width: 5vw;
-  height: 3vw;
+  width: 8vw;
+  height: 4vw;
   font-size: 0;
   background-color: transparent;
   border-top: 0.5vw solid;
@@ -513,7 +557,7 @@ img {
 .burger::after {
   content: "";
   position: absolute;
-  bottom: 1.3vw;
+  bottom: 1.7vw;
   left: 0;
   width: 100%;
   height: 0.5vw;

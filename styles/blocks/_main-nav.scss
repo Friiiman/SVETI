@@ -16,12 +16,16 @@
 
     &--promo {
         position: relative;
-        padding-top: 13vw;
+        padding-top: 30vh;
         padding-left: 0;
 
         @media (max-width: 1000px) {
             position: fixed;
             padding: 0;
+        }
+
+        @media (min-width: 1281px) {
+            padding-top: 13vw;
         }
     }
 

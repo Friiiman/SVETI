@@ -4,31 +4,50 @@
     height: 100%;
     user-select: none;
 
+    @media (max-width: 1000px) {
+        margin-top: 22vw;
+        height: 30vw;
+    }
+
     &__logo {
         position: absolute;
         top: -21vh;
-        left: 40vw;
+        left: 39vw;
         width: 15vw;
         height: 100vh;
         transform: rotate(22.5deg);
+
+        @media (max-width: 1000px) {
+            top: -50vh;
+            left: 42vw;
+        }
     }
 
     &__main-logo {
         position: absolute;
         display: inline-block;
         top: 42vh;
-        left: 34.7vw;
+        left: 33.7vw;
         width: 25vw;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &__text {
         position: absolute;
         display: inline-block;
         top: 58vh;
-        left: 25vw;
+        left: 24vw;
         width: 47vw;
         height: 100vh;
         font-size: 5vw;
         font-family: 'bodega-script';
+
+        @media (max-width: 1000px) {
+            top: 10vw;
+            left: 25vw;
+        }
     }
 }

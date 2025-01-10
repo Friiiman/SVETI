@@ -2,8 +2,8 @@
     position: relative;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    width: 5vw;
-    height: 3vw;
+    width: 8vw;
+    height: 4vw;
     font-size: 0;
     background-color: transparent;
     border-top: .5vw solid;
@@ -16,7 +16,7 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 1.3vw;
+        bottom: 1.7vw;
         left: 0;
         width: 100%;
         height: .5vw;
