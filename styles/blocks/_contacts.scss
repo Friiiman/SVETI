@@ -1,0 +1,42 @@
+.contacts {
+    position: relative;
+    display: flex;
+    gap: 12vw;
+
+    &__content {
+        display: flex;
+        gap: 10vw;
+        padding-top: 3vw;
+        overflow: hidden;
+
+        & a {
+            color: #000;
+        }
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        min-width: 30vw;
+        gap: 1.5vw;
+    }
+
+    &__title{
+        margin-bottom: 1vw;
+    }
+
+    &__vk{
+        margin-bottom: 2vw;
+    }
+
+    &__work-time{
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+    }
+
+    &__img{
+        margin-right: 10vw;
+        width: 27vw;
+    }
+}

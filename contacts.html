@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Изделия</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script type="module" src="js/earrings.js" defer></script>
     <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
-
     <header class="page-header">
         <a href="index.html" class="page-header__logo">
             <img src="./styles/img/main-logo-black.svg" alt="Логотип" class="page-header__logo-img">
@@ -26,14 +24,14 @@
         </div>
         <ul class="page-header__list">
             <li class="page-header__item"><a href="#" class="page-header__link">О нас</a></li>
-            <li class="page-header__item"><a href="contacts.html" class="page-header__link">Контакты</a></li>
+            <li class="page-header__item"><a href="#" class="page-header__link">Контакты</a></li>
             <li class="page-header__item"><a href="tel:+79119681458" class="page-header__link">+7 (911) 968-14-58</a>
             </li>
         </ul>
     </header>
 
     <main class="page-main">
-        <div class="products">
+        <div class="contacts">
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
@@ -53,7 +51,7 @@
                         <img src="./styles/img/ico-logo-black.svg" alt="#" class="main-nav__img">
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Серьги</a>
+                        <a href="earrings.html" class="main-nav__link">Серьги</a>
                         <img src="./styles/img/ico-logo-black.svg" alt="#" class="main-nav__img">
                     </li>
                     <li class="main-nav__item">
@@ -78,19 +76,30 @@
                     </li>
                 </ul>
             </nav>
-            <div class="products__catalog">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="all-products.html" class="breadcrumbs__link">Все изделия</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__link">Серьги</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="products__product-cards"></div>
-                <div class="pagination"></div>
+            <div class="contacts__content">
+                <div class="contacts__left">
+                    <h1 class="contacts__title">КОНТАКТЫ</h1>
+                    <p>
+                        <strong>Тел. </strong>
+                        <a href="tel:+79119681458" class="contacts__tel">+7 (911) 968-14-58</a>
+                    </p>
+                    <p class="contacts__vk">
+                        <strong>Вконтакте: </strong>
+                        <a target="_blank" href="https://vk.com/svetbusin" class="contacts__link">vk. com/svetbusin</a>
+                    </p>
+                    <h2 class="contacts__schedule">ГРАФИК РАБОТЫ SVETI</h2>
+                    <p>Обработка заказов, консультации по Телефону</p>
+                    <div class="contacts__work-time">
+                        <p>Понедельник 10:00 - 22:00</p>
+                        <p>Вторник 10:00 - 22:00</p>
+                        <p>Среда 10:00 - 22:00</p>
+                        <p>Четверг 10:00 - 22:00</p>
+                        <p>Пятница 10:00 - 22:00</p>
+                        <p>Суббота 10:00 - 22:00</p>
+                        <p>Воскресенье 10:00 - 22:00</p>
+                    </div>
+                </div>
+                <img class="contacts__img" src="styles/img/contacts-img.png" alt="Фото">
             </div>
         </div>
     </main>
@@ -111,12 +120,11 @@
                     <a href="#" class="page-footer__nav-link">О нас</a>
                 </li>
                 <li class="page-footer__nav-item">
-                    <a href="contacts.html" class="page-footer__nav-link">Контакты</a>
+                    <a href="#" class="page-footer__nav-link">Контакты</a>
                 </li>
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>

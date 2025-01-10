@@ -87,6 +87,16 @@
         }
     }
 
+    &__link--mobile {
+        display: none;
+        margin-top: 5vw;
+        font-weight: 600;
+
+        @media (max-width: 1000px) {
+            display: block;
+        }
+    }
+
     @media (max-width: 1000px) {
         position: fixed;
         padding: 0 0 5vw;

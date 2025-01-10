@@ -15,6 +15,15 @@ export default function burger() {
     });
   }
 
+  function burgerClose(){
+    const burger = document.querySelector(".burger");
+    const burgerBtn = document.querySelector(".burger__btn");
+    burger.addEventListener('click', (e) => {
+      burgerBtn.classList.toggle('burger__btn--close');
+    })
+  }
+
   navHidden();
   navToggle();
+  burgerClose();
 }
