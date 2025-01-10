@@ -1,16 +1,18 @@
 .contacts {
     position: relative;
     display: flex;
-    gap: 12vw;
+    gap: 7vw;
 
     &__content {
         display: flex;
-        gap: 10vw;
+        justify-content: space-between;
+        gap: 5vw;
+        width: 100%;
         padding-top: 3vw;
-        overflow: hidden;
 
         & a {
             color: #000;
+            text-decoration: underline
         }
     }
 
@@ -36,7 +38,7 @@
     }
 
     &__img{
-        margin-right: 10vw;
+        margin-right: 3vw;
         width: 27vw;
     }
 }

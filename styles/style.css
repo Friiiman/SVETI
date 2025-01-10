@@ -384,7 +384,6 @@ img {
   grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
   gap: 3vw;
   padding-top: 4vw;
-  overflow: hidden;
 }
 @media (max-width: 1000px) {
   .products__product-cards {
@@ -512,16 +511,18 @@ img {
 .contacts {
   position: relative;
   display: flex;
-  gap: 12vw;
+  gap: 7vw;
 }
 .contacts__content {
   display: flex;
-  gap: 10vw;
+  justify-content: space-between;
+  gap: 5vw;
+  width: 100%;
   padding-top: 3vw;
-  overflow: hidden;
 }
 .contacts__content a {
   color: #000;
+  text-decoration: underline;
 }
 .contacts__left {
   display: flex;
@@ -541,7 +542,7 @@ img {
   gap: 0.5vw;
 }
 .contacts__img {
-  margin-right: 10vw;
+  margin-right: 3vw;
   width: 27vw;
 }
 
