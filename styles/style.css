@@ -662,7 +662,7 @@ img {
   content: "*";
   position: absolute;
   left: -1vw;
-  top: 0;
+  top: 0.2vw;
 }
 @media (max-width: 1000px) {
   .product-description__details {
