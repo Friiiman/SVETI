@@ -1,5 +1,5 @@
 export function createProductCardPopup(postsData, cardsContainer) {
-    postsData.forEach(({ productId, imgSrc, additionalImgSrcFirst, additionalImgSrcSecond, productName, productPrice, breadcrumbs, description, length }) => {
+    postsData.forEach(({ productId, imgSrc, additionalImgSrcFirst, additionalImgSrcSecond, productName, productPrice, breadcrumbs, breadcrumbsLink, description, length }) => {
         const productCardEl = `
             <div id="p-${productId}" class="product-description">
                 <div class="product-description__inner">
@@ -9,11 +9,9 @@ export function createProductCardPopup(postsData, cardsContainer) {
                                 <a href="all-products.html" class="breadcrumbs__link">Все изделия</a>
                             </li>
                             <li class="breadcrumbs__item">
-                                <a href="#" class="breadcrumbs__link">${breadcrumbs}</a>
+                                <a href="${breadcrumbsLink}" class="breadcrumbs__link">${breadcrumbs}</a>
                             </li>
-                            <li class="breadcrumbs__item">
-                                <a href="#" class="breadcrumbs__link">${productName}</a>
-                            </li>
+                            <li class="breadcrumbs__item">${productName}</li>
                         </ul>
                         <img src="./styles/img/cross-close.svg" alt="Закрыть" class="breadcrumbs__close">
                     </nav>
