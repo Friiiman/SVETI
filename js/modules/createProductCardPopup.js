@@ -25,7 +25,9 @@ export function createProductCardPopup(postsData, cardsContainer) {
                         <p class="product-description__text">${description}</p>
                         <span class="product-description__char"><strong>Длина: </strong>${length} см</span>
                         <span class="product-description__price">${productPrice} ₽</span>
-                        <button class="product-description__button">Купить в один клик</button>
+                        <p class="product-description__tel">Заказать изделие можно по телефону:<br>
+                            <a href="tel:+79119681458" class="product-description__tel-link">+7 (911) 968-14-58</a>
+                        </p>
                         <details class="product-description__details">
                             <summary class="product-description__summary">Уход за изделием</summary>
                             <h3>РЕКОМЕНДАЦИИ ПО УХОДУ ЗА УКРАШЕНИЯМИ</h3>
