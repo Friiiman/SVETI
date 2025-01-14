@@ -1,7 +1,7 @@
 import { getData } from './getData.js';
 import { createProductCardPopup } from './createProductCardPopup.js';
 import { productPopupClose } from './productPopupClose.js';
-import { removePopupErrorImg } from './removePopupErrorImg.js';
+import { removeErrorImg } from './removeErrorImg.js';
 
 export async function addProductCardPopup() {
     const postsData = await getData();
@@ -19,7 +19,7 @@ export async function addProductCardPopup() {
 
             createProductCardPopup(newData, pageMainEl);
             productPopupClose();
-            removePopupErrorImg();
+            removeErrorImg('.product-description__img');
         }
     });
 }

@@ -1,9 +1,25 @@
 .product-card {
+    position: relative;
     color: #000;
     cursor: pointer;
 
     &__img {
         margin-bottom: 1vw;
+
+        &:hover~.product-card__img-hover {
+            display: block;
+        }
+    }
+
+    &__img-hover {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &:hover {
+            display: block;
+        }
     }
 
     &__text {

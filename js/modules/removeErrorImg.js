@@ -1,5 +1,5 @@
-export function removePopupErrorImg() {
-    const images = document.querySelectorAll('.product-description__img');
+export function removeErrorImg(classElement) {
+    const images = document.querySelectorAll(classElement);
     
     images.forEach(img => {
         img.addEventListener('error', function () {

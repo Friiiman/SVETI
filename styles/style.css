@@ -392,11 +392,24 @@ img {
 }
 
 .product-card {
+  position: relative;
   color: #000;
   cursor: pointer;
 }
 .product-card__img {
   margin-bottom: 1vw;
+}
+.product-card__img:hover ~ .product-card__img-hover {
+  display: block;
+}
+.product-card__img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-card__img-hover:hover {
+  display: block;
 }
 .product-card__text {
   display: flex;
