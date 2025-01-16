@@ -1,5 +1,5 @@
 export function upButton() {
-    
+
     document.addEventListener("DOMContentLoaded", function () {
         const backToTop = document.querySelector(".up-button");
         const backToTopHidden = "up-button--hidden";
@@ -11,5 +11,6 @@ export function upButton() {
                 backToTop.classList.add(backToTopHidden);
             }
         });
+
     });
 }

@@ -1,6 +1,6 @@
 export function pagination(){
     const content = document.querySelector('.products__product-cards');
-    const itemsPerPage = 12; // set number of items per page
+    const itemsPerPage = 12;
     let currentPage = 0;
     const items = Array.from(content.getElementsByTagName('article')).slice(0);
 
@@ -17,7 +17,6 @@ export function pagination(){
         const totalPages = Math.ceil(items.length / itemsPerPage);
         const paginationDiv = document.querySelector('.pagination');
 
-        // Add page buttons
         for (let i = 0; i < totalPages; i++) {
             const pageButton = document.createElement('button');
             pageButton.classList.add('pagination__button');

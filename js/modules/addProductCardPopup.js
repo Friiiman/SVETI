@@ -2,6 +2,7 @@ import { getData } from './getData.js';
 import { createProductCardPopup } from './createProductCardPopup.js';
 import { productPopupClose } from './productPopupClose.js';
 import { removeErrorImg } from './removeErrorImg.js';
+import { createImgPopup } from './createImgPopup.js';
 
 export async function addProductCardPopup() {
     const postsData = await getData();
@@ -20,6 +21,16 @@ export async function addProductCardPopup() {
             createProductCardPopup(newData, pageMainEl);
             productPopupClose();
             removeErrorImg('.product-description__img');
+            createImgPopup();
+            
+            const imgWrap = document.querySelectorAll('.product-description__img-wrap');
+
+            imgWrap.forEach((item) => {
+                const imgElement = item.querySelector('.product-description__img');
+                imgElement.addEventListener('error', function () {
+                    item.remove();
+                });
+            });
         }
     });
 }
