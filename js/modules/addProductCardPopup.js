@@ -3,6 +3,7 @@ import { createProductCardPopup } from './createProductCardPopup.js';
 import { productPopupClose } from './productPopupClose.js';
 import { removeErrorImg } from './removeErrorImg.js';
 import { createImgPopup } from './createImgPopup.js';
+import { slider } from './slider.js';
 
 export async function addProductCardPopup() {
     const postsData = await getData();
@@ -31,6 +32,19 @@ export async function addProductCardPopup() {
                     item.remove();
                 });
             });
+            
+            const sliderEl = document.querySelector('.slider__container');
+            const imgSlider = sliderEl.querySelectorAll('img');
+
+            imgSlider.forEach((item) => {
+                console.log(item);
+
+                if (!item.complete || item.naturalHeight === 0) {
+                    item.remove();
+                }
+            });
+
+            slider();
         }
     });
 }

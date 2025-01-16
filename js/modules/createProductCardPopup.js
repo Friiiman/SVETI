@@ -15,6 +15,15 @@ export function createProductCardPopup(postsData, cardsContainer) {
                         </ul>
                         <img src="./styles/img/cross-close.svg" alt="Закрыть" class="breadcrumbs__close">
                     </nav>
+                    <div class="slider">
+                        <div class="slider__container">
+                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img">
+                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img">
+                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img">
+                        </div>
+                        <button class="slider__prev-button" aria-label="Посмотреть предыдущий слайд"></button>
+                        <button class="slider__next-button" aria-label="Посмотреть следующий слайд"></button>
+                    </div>
                     <div class="product-description__left">
                         <div class="product-description__img-wrap">
                             <img src="${imgSrc}" alt="Фото товара" class="product-description__img">
