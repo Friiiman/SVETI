@@ -11,7 +11,7 @@ export async function addProductCard(typeToFilter = 'none') {
     const cardsContainer = document.querySelector(".products__product-cards");
 
     createProductCardHtml(postsData, cardsContainer);
-    removeErrorImg('.product-card__img-hover');
+    removeErrorImg(".product-card__img-hover");
 
     pagination();
 }
