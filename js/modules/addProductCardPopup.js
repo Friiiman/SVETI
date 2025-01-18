@@ -37,7 +37,6 @@ export async function addProductCardPopup() {
             const imgSlider = sliderEl.querySelectorAll('img');
 
             imgSlider.forEach((item) => {
-                console.log(item);
 
                 if (!item.complete || item.naturalHeight === 0) {
                     item.remove();
