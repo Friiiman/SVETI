@@ -1,5 +1,5 @@
 import { getData } from './getData.js';
-import { createProductCardPopup } from './createProductCardPopup.js';
+import { createProductCardPopupHtml } from './createProductCardPopupHtml.js';
 import { productPopupClose } from './productPopupClose.js';
 import { removeErrorImg } from './removeErrorImg.js';
 import { createImgPopup } from './createImgPopup.js';
@@ -19,13 +19,12 @@ export async function addProductCardPopup() {
             let newData = postsData.filter(product => product.productId === id);
             bodyEl.classList.add("body--scroll-off");
 
-            createProductCardPopup(newData, pageMainEl);
+            createProductCardPopupHtml(newData, pageMainEl);
             productPopupClose();
             removeErrorImg('.product-description__img');
             createImgPopup();
             
             const imgWrap = document.querySelectorAll('.product-description__img-wrap');
-
             imgWrap.forEach((item) => {
                 const imgElement = item.querySelector('.product-description__img');
                 imgElement.addEventListener('error', function () {
@@ -35,9 +34,7 @@ export async function addProductCardPopup() {
             
             const sliderEl = document.querySelector('.slider__container');
             const imgSlider = sliderEl.querySelectorAll('img');
-
             imgSlider.forEach((item) => {
-
                 if (!item.complete || item.naturalHeight === 0) {
                     item.remove();
                 }

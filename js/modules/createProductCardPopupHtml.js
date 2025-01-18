@@ -1,4 +1,4 @@
-export function createProductCardPopup(postsData, cardsContainer) {
+export function createProductCardPopupHtml(postsData, cardsContainer) {
     postsData.forEach(({ productId, imgSrc, additionalImgSrcFirst, additionalImgSrcSecond, productName, productPrice, breadcrumbs, breadcrumbsLink, description, length }) => {
         const productCardEl = `
             <div id="p-${productId}" class="product-description">
