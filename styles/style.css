@@ -924,17 +924,17 @@ img {
 
 .up-button {
   position: fixed;
-  right: 1vw;
+  left: 3vw;
   bottom: 5vw;
-  width: 3vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 3.5vw;
   padding: 1vw 0;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   background-image: url("./img/arrow-up.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 80%;
-  opacity: 0.3;
+  background-size: 40%;
+  opacity: 0.4;
   border: none;
   transition: all 300ms;
   cursor: pointer;

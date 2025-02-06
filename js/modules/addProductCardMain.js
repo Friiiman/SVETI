@@ -1,6 +1,6 @@
-import { getData } from './getData.js';
-import { createProductCardHtml } from './createProductCardHtml.js';
-import { removeErrorImg } from './removeErrorImg.js';
+import { getData } from '../components/getData.js';
+import { createProductCardHtml } from '../components/createProductCardHtml.js';
+import { removeErrorImg } from '../components/removeErrorImg.js';
 
 export async function addProductCardMain() {
     let postsData = await getData();

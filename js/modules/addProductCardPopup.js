@@ -1,9 +1,9 @@
-import { getData } from './getData.js';
-import { createProductCardPopupHtml } from './createProductCardPopupHtml.js';
-import { productPopupClose } from './productPopupClose.js';
-import { removeErrorImg } from './removeErrorImg.js';
-import { createImgPopup } from './createImgPopup.js';
-import { slider } from './slider.js';
+import { getData } from '../components/getData.js';
+import { createProductCardPopupHtml } from '../components/createProductCardPopupHtml.js';
+import { productPopupClose } from '../components/productPopupClose.js';
+import { removeErrorImg } from '../components/removeErrorImg.js';
+import { createImgPopup } from '../components/createImgPopup.js';
+import { slider } from '../components/slider.js';
 
 export async function addProductCardPopup() {
     const postsData = await getData();
