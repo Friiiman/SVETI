@@ -14,6 +14,7 @@
         grid-template-rows: repeat(1, 4vw) repeat(1, 1fr);
         grid-column-gap: 3vw;
         grid-row-gap: 1vw;
+        align-items: start;
         top: calc(50% - 40vh);
         left: calc(50% - 40vw);
         padding: 2vw;

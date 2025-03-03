@@ -22,4 +22,14 @@
     &--hidden{
         display: none;
     }
+
+    @media (max-width: 1279px) {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    @media (max-width: 1000px) {
+        width: 8vw;
+        height: 8vw;
+    }
 }

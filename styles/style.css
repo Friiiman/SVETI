@@ -610,6 +610,95 @@ img {
   }
 }
 
+.about-us {
+  position: relative;
+  display: flex;
+  gap: 7vw;
+}
+.about-us__content, .about-us__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+@media (max-width: 1000px) {
+  .about-us__content, .about-us__text {
+    gap: 3vw;
+    font-size: 3vw;
+  }
+}
+.about-us__content {
+  padding-top: 3vw;
+}
+.about-us__top-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 5vw;
+  grid-row-gap: 2vw;
+}
+@media (max-width: 1000px) {
+  .about-us__top-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 0;
+    grid-row-gap: 3vw;
+    justify-items: center;
+  }
+}
+.about-us__text:nth-child(1) {
+  grid-area: 1/1/2/2;
+  align-items: start;
+}
+@media (max-width: 1000px) {
+  .about-us__text:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+}
+.about-us__text:nth-child(2) {
+  grid-area: 2/1/3/2;
+}
+@media (max-width: 1000px) {
+  .about-us__text:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+}
+.about-us__text:nth-child(3) {
+  grid-area: 3/1/4/2;
+}
+@media (max-width: 1000px) {
+  .about-us__text:nth-child(3) {
+    grid-area: 4/1/5/2;
+  }
+}
+.about-us__text:nth-child(3) {
+  grid-area: 4/1/5/2;
+}
+@media (max-width: 1000px) {
+  .about-us__text:nth-child(3) {
+    grid-area: 5/1/6/2;
+  }
+}
+.about-us__img {
+  max-height: 43vw;
+  width: auto;
+  grid-area: 1/2/5/3;
+}
+@media (max-width: 1000px) {
+  .about-us__img {
+    display: none;
+  }
+}
+.about-us__img--mobile {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .about-us__img--mobile {
+    display: block;
+    grid-area: 3/1/4/2;
+    max-height: 70vw;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -724,6 +813,7 @@ img {
   grid-template-rows: repeat(1, 4vw) repeat(1, 1fr);
   grid-column-gap: 3vw;
   grid-row-gap: 1vw;
+  align-items: start;
   top: calc(50% - 40vh);
   left: calc(50% - 40vw);
   padding: 2vw;
@@ -944,6 +1034,18 @@ img {
 }
 .up-button--hidden {
   display: none;
+}
+@media (max-width: 1279px) {
+  .up-button {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media (max-width: 1000px) {
+  .up-button {
+    width: 8vw;
+    height: 8vw;
+  }
 }
 
 .slider {

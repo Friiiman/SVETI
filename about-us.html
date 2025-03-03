@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кольца | SVETI</title>
+    <title>Все изделия | SVETI</title>
     <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
     <link rel="stylesheet" href="styles/style.css">
-    <script type="module" src="js/addProductCardsOnPage.js" defer></script>
-    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/main-min.js" defer></script>
 </head>
 
 <body id="body">
@@ -26,7 +25,7 @@
             </div>
         </div>
         <ul class="page-header__list">
-            <li class="page-header__item"><a href="about-us.html" class="page-header__link">О нас</a></li>
+            <li class="page-header__item"><a href="#" class="page-header__link">О нас</a></li>
             <li class="page-header__item"><a href="contacts.html" class="page-header__link">Контакты</a></li>
             <li class="page-header__item"><a href="tel:+79119681458" class="page-header__link">+7 (911) 968-14-58</a>
             </li>
@@ -34,11 +33,11 @@
     </header>
 
     <main class="page-main">
-        <div class="products">
+        <div class="about-us">
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="all-products.html" class="main-nav__link main-nav__link--bold">Все изделия</a>
+                        <a href="#" class="main-nav__link main-nav__link--bold">Все изделия</a>
                         <img src="./styles/img/ico-logo-black.svg" alt="#" class="main-nav__img">
                     </li>
                     <li class="main-nav__item">
@@ -78,23 +77,25 @@
                         <img src="./styles/img/ico-logo-black.svg" alt="#" class="main-nav__img">
                     </li>
                     <li class="main-nav__item">
-                        <a href="contacts.html" class="main-nav__link main-nav__link--mobile main-nav__link--promo">Контакты</a>
+                        <a href="contacts.html"
+                            class="main-nav__link main-nav__link--mobile main-nav__link--promo">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <div class="products__catalog">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="all-products.html" class="breadcrumbs__link">Все изделия</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__link">Кольца</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="products__product-cards"></div>
-                <div class="pagination"></div>
+            <div class="about-us__content">
+                <h1 class="about-us__title">О нас</h1>
+                <div class="about-us__text">
+                    <div class="about-us__top-wrapper">
+                        <p class="about-us__text-item">Добро пожаловать в SVETI — мир изысканной бижутерии из натуральных камней, созданной с любовью и вдохновением!</p>
+                        <p class="about-us__text-item">Мы верим, что каждая женщина уникальна, и <strong>наша миссия</strong> — подчеркнуть её природную красоту и индивидуальность. Каждое изделие в нашей коллекции — это результат кропотливой ручной работы, вдохновлённой магией натуральных камней. Мы выбираем только качественные материалы, чтобы подарить вам не только стильное украшение, но и частичку энергии природы.</p>
+                        <p class="about-us__text-item"><strong>SVETI</strong> — это не просто бижутерия, это история, которую вы создаёте вместе с нами. Мы стремимся к тому, чтобы каждая наша работа приносила радость, вдохновляла и становилась вашим талисманом. Наши украшения создаются с вниманием к деталям, чтобы вы могли чувствовать себя особенной в любой момент.</p>
+                        <p class="about-us__text-item">Мы гордимся тем, что наши изделия изготавливаются вручную, что делает каждое из них уникальным. Мы используем только натуральные камни, которые не только красивы, но и обладают своей особой энергетикой. Каждое украшение SVETI — это маленькое произведение искусства, которое подчеркнёт ваш стиль и добавит вашему образу изысканности.</p>
+                        <img src="styles/img/about-us-photo.jpg" alt="photo" class="about-us__img">
+                        <img src="styles/img/about-us-photo-mobile.jpg" alt="photo" class="about-us__img--mobile">
+                    </div>
+                    <p class="about-us__text-item">Присоединяйтесь к нашему миру, где каждая деталь имеет значение, а камень рассказывает свою уникальную историю. Мы рады делиться с вами нашей страстью к красоте и природе, создавая украшения, которые будут радовать вас каждый день.</p>
+                    <p class="about-us__text-item">С любовью, команда SVETI.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -112,7 +113,7 @@
                     <a href="index.html" class="page-footer__nav-link">Главная</a>
                 </li>
                 <li class="page-footer__nav-item">
-                    <a href="about-us.html" class="page-footer__nav-link">О нас</a>
+                    <a href="#" class="page-footer__nav-link">О нас</a>
                 </li>
                 <li class="page-footer__nav-item">
                     <a href="contacts.html" class="page-footer__nav-link">Контакты</a>
