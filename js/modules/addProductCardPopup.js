@@ -9,9 +9,9 @@ export async function addProductCardPopup() {
     const postsData = await getData();
     const pageMainEl = document.querySelector(".page-main");
     const cardsContainer = document.querySelector(".products");
-    
+
     cardsContainer.addEventListener('click', function (event) {
-        
+
         if (event.target.closest('.product-card')) {
             const bodyEl = document.querySelector("body");
             const productCard = event.target.closest('.product-card');
@@ -23,7 +23,7 @@ export async function addProductCardPopup() {
             productPopupClose();
             removeErrorImg('.product-description__img');
             createImgPopup();
-            
+
             const imgWrap = document.querySelectorAll('.product-description__img-wrap');
             imgWrap.forEach((item) => {
                 const imgElement = item.querySelector('.product-description__img');
@@ -31,16 +31,18 @@ export async function addProductCardPopup() {
                     item.remove();
                 });
             });
-            
-            const sliderEl = document.querySelector('.slider__container');
-            const imgSlider = sliderEl.querySelectorAll('img');
-            imgSlider.forEach((item) => {
-                if (!item.complete || item.naturalHeight === 0) {
-                    item.remove();
-                }
-            });
 
-            slider();
+            setTimeout(() => {
+                const sliderEl = document.querySelector('.slider__container');
+                const imgSlider = sliderEl.querySelectorAll('img');
+                imgSlider.forEach((item) => {
+                    if (item.naturalHeight === 0) {
+                        item.remove();
+                    }
+                });
+                slider();
+            }, 50);
+
         }
     });
 }

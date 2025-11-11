@@ -10,21 +10,21 @@ export function createImgPopup() {
             createImgPopupHtml(imgContainer, src);
             popupClose();
         }
-
-        function popupClose() {
-            const productDescriptionPopupEl = document.querySelector(".product-description__popup");
-            const closeBtn = document.querySelector(".product-description__popup-close");
-
-            closeBtn.addEventListener("click", (e) => {
-                productDescriptionPopupEl.remove();
-            });
-
-            productDescriptionPopupEl.addEventListener("click", (e) => {
-                const { target } = e;
-                if (target.classList.contains("product-description__popup")) {
-                    productDescriptionPopupEl.remove();
-                }
-            });
-        }
     });
+
+    function popupClose() {
+        const productDescriptionPopupEl = document.querySelector(".product-description__popup");
+        const closeBtn = document.querySelector(".product-description__popup-close");
+
+        closeBtn.addEventListener("click", (e) => {
+            productDescriptionPopupEl.remove();
+        });
+
+        productDescriptionPopupEl.addEventListener("click", (e) => {
+            const { target } = e;
+            if (target.classList.contains("product-description__popup")) {
+                productDescriptionPopupEl.remove();
+            }
+        });
+    }
 }

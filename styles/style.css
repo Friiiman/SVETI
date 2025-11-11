@@ -858,6 +858,7 @@ img {
 .product-description__img-wrap {
   position: relative;
   max-height: 30vw;
+  overflow: hidden;
 }
 .product-description__img-wrap::before {
   content: " ";

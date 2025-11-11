@@ -62,6 +62,7 @@
     &__img-wrap {
         position: relative;
         max-height: 30vw;
+        overflow: hidden;
 
         &::before {
             content: ' ';
