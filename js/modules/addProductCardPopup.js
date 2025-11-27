@@ -41,7 +41,7 @@ export async function addProductCardPopup() {
                     }
                 });
                 slider();
-            }, 50);
+            }, 500);
 
         }
     });
