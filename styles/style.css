@@ -713,8 +713,7 @@ img {
 .pagination--hidden {
   position: absolute;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   white-space: nowrap;
@@ -826,7 +825,7 @@ img {
 @media (max-width: 1000px) {
   .product-description__inner {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto auto 1fr;
     grid-row-gap: 5vw;
     width: 100vw;
     height: 100vh;
