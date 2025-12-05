@@ -24,10 +24,6 @@ export async function addProductCardPopup() {
             removeErrorImg('.product-description__img');
             createImgPopup();
 
-            const sliderElement = document.querySelector('.slider');
-            const sliderContainerEl = sliderElement.querySelector('.slider__container');
-            const imgSlider = sliderContainerEl.querySelectorAll('img');
-
             function checkAndAddClass() {
                 const threshold = 1000;
 
