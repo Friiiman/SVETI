@@ -17,24 +17,14 @@ export function createProductCardPopupHtml(postsData, cardsContainer) {
                     </nav>
                     <div class="slider">
                         <div class="slider__container">
-                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img">
-                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img">
-                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img">
+                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
+                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
+                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
                         </div>
                         <button class="slider__prev-button" aria-label="Посмотреть предыдущий слайд"></button>
                         <button class="slider__next-button" aria-label="Посмотреть следующий слайд"></button>
                     </div>
-                    <div class="product-description__left">
-                        <div class="product-description__img-wrap">
-                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img">
-                        </div>
-                        <div class="product-description__img-wrap">
-                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img">
-                        </div>
-                        <div class="product-description__img-wrap">
-                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img">
-                        </div>
-                    </div>
+                    
                     <div class="product-description__right">
                         <h2 class="product-description__title">${productName}</h2>
                         <p class="product-description__text">${description}</p>

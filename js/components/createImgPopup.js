@@ -1,7 +1,7 @@
 import { createImgPopupHtml } from './createImgPopupHtml.js';
 
 export function createImgPopup() {
-    const imgContainer = document.querySelector(".product-description__left");
+    const imgContainer = document.querySelector(".slider__container");
 
     imgContainer.addEventListener("click", (e) => {
         const { target } = e;

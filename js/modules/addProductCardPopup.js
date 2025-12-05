@@ -24,25 +24,20 @@ export async function addProductCardPopup() {
             removeErrorImg('.product-description__img');
             createImgPopup();
 
-            const imgWrap = document.querySelectorAll('.product-description__img-wrap');
-            imgWrap.forEach((item) => {
-                const imgElement = item.querySelector('.product-description__img');
-                imgElement.addEventListener('error', function () {
-                    item.remove();
-                });
-            });
+            const sliderElement = document.querySelector('.slider');
+            const sliderContainerEl = sliderElement.querySelector('.slider__container');
+            const imgSlider = sliderContainerEl.querySelectorAll('img');
 
-            setTimeout(() => {
-                const sliderEl = document.querySelector('.slider__container');
-                const imgSlider = sliderEl.querySelectorAll('img');
-                imgSlider.forEach((item) => {
-                    if (item.naturalHeight === 0) {
-                        item.remove();
-                    }
-                });
-                slider();
-            }, 100);
+            function checkAndAddClass() {
+                const threshold = 1000;
 
+                if (window.innerWidth <= threshold) {
+                    slider();
+                }
+            }
+
+            checkAndAddClass();
+            window.addEventListener('resize', checkAndAddClass);
         }
     });
 }
