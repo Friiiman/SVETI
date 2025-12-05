@@ -30,5 +30,5 @@ export function slider() {
             });
         }
         updateSlider();
-    }, 50);
+    }, 100);
 }
