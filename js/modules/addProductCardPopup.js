@@ -32,7 +32,9 @@ export async function addProductCardPopup() {
                 const threshold = 1000;
 
                 if (window.innerWidth <= threshold) {
-                    slider();
+                    setTimeout(() => {
+                        slider();
+                    }, 100);
                 }
             }
 
