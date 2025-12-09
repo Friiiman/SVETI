@@ -2,7 +2,14 @@ export function slider() {
     const slider = document.querySelector('.slider__container');
     const prevButton = document.querySelector('.slider__prev-button');
     const nextButton = document.querySelector('.slider__next-button');
-    const slides = Array.from(slider.querySelectorAll('img'));
+    const allImgsArray = Array.from(slider.getElementsByClassName('product-description__img'));
+    const slides = [];
+    allImgsArray.forEach(img => {
+        if (img.naturalWidth > 0) {
+            slides.push(img);
+        }
+    });
+    console.log(slides);
     const slideCount = slides.length;
     let slideIndex = 0;
 
