@@ -17,9 +17,9 @@ export function createProductCardPopupHtml(postsData, cardsContainer) {
                     </nav>
                     <div class="slider">
                         <div class="slider__container">
-                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
-                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
-                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img" width="450" height="600" onerror="this.remove()">
+                            <img src="${imgSrc}" alt="Фото товара" class="product-description__img" width="450" height="600"">
+                            <img src="${additionalImgSrcFirst}" alt="Фото товара" class="product-description__img"">
+                            <img src="${additionalImgSrcSecond}" alt="Фото товара" class="product-description__img"">
                         </div>
                         <button class="slider__prev-button" aria-label="Посмотреть предыдущий слайд"></button>
                         <button class="slider__next-button" aria-label="Посмотреть следующий слайд"></button>
